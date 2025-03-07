@@ -19,6 +19,8 @@ namespace Stash.Providers
 {
     public static class StashAPI
     {
+        private static readonly string[] _xxxTag = { "XXX" };
+
         public static async Task<JObject> GetDataFromAPI(string query, CancellationToken cancellationToken)
         {
             JObject json = null;
@@ -293,6 +295,8 @@ namespace Stash.Providers
             result.Item.PremiereDate = sceneData.BirthDate;
             result.Item.EndDate = sceneData.DeathDate;
 
+            result.Item.Tags = _xxxTag;
+
             result.HasMetadata = true;
 
             return result;
@@ -381,6 +385,8 @@ namespace Stash.Providers
             data = http["data"]["findStudio"].ToString();
             var sceneData = JsonConvert.DeserializeObject<Models.Studio>(data);
             */
+
+            result.Item.Tags = _xxxTag;
 
             result.HasMetadata = true;
 
