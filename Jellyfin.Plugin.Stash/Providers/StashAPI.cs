@@ -295,6 +295,7 @@ namespace Stash.Providers
             result.Item.PremiereDate = sceneData.BirthDate;
             result.Item.EndDate = sceneData.DeathDate;
 
+            // Workaround for Jellyfin Search
             result.Item.Tags = _xxxTag;
 
             result.HasMetadata = true;
