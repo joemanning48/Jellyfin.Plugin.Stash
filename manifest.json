@@ -8,6 +8,14 @@
         "overview": "",
         "versions": [
             {
+                "checksum": "db4cd2ff75fad42ce6aaedf92b7bf968",
+                "changelog": "Adding XXX tag to performers and studios for search filtering",
+                "targetAbi": "10.9.0.0",
+                "sourceUrl": "https://github.com/joemanning48/Jellyfin.Plugin.Stash/releases/download/latest/Jellyfin.Plugin.Stash.zip",
+                "timestamp": "2025-03-08T00:00:43Z",
+                "version": "1.1.0.3"
+            },
+            {
                 "checksum": "68d04367c1d49880795c6de53c912e1e",
                 "changelog": "Added Support Jellyfin 10.9; Added Disambiguation Field to Performer Name; Minor Changes",
                 "targetAbi": "10.9.0.0",
